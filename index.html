@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Currenlink System Limited | Ethical IT, CCTV & Cybersecurity Support in Lagos</title>
+  <meta name="description" content="Currenlink System Limited delivers ethical IT support, CCTV maintenance, secure network operations, cybersecurity awareness, hotel systems support and data training for hotels, schools and growing businesses in Lagos, Nigeria." />
+  <meta name="keywords" content="ethical IT support Lagos, CCTV installation, Network security, Cybersecurity audit Lagos, Hotel software support, Data training Nigeria" />
+  <meta name="author" content="Currenlink System Limited" />
+  <meta name="robots" content="index, follow" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .nav-link {
+      color: inherit;
+      transition: color 0.2s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #22c55e;
+    }
+    .btn-primary {
+      background-color: #0f3b6f;
+      color: white;
+    }
+    .btn-primary:hover {
+      background-color: #0c2f55;
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.45);
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+    }
+    .btn-secondary:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+    .logo-image {
+      width: 11rem;
+      max-width: 220px;
+      height: auto;
+    }
+    .cyber-grid {
+      background-image:
+        linear-gradient(rgba(34, 197, 94, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 197, 94, 0.08) 1px, transparent 1px);
+      background-size: 42px 42px;
+    }
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      box-shadow: 0 24px 80px rgba(2, 6, 23, 0.32);
+    }
+    .service-card {
+      border-radius: 0.75rem;
+      border: 1px solid #e2e8f0;
+      background: #ffffff;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: #94a3b8;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+    }
+  </style>
+</head>
+<body>
+  <header class="fixed inset-x-0 top-0 z-50 bg-slate-950/95 text-white backdrop-blur-sm border-b border-slate-800">
+    <div class="container mx-auto flex items-center justify-between px-4 py-4">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="currenlink_logo.png" alt="Currenlink logo" class="logo-image" />
+        <span class="sr-only">Currenlink System Limited</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-white">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#healthcheck" class="nav-link">IT Health Check</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="navToggle" class="inline-flex items-center rounded-full border border-slate-700 bg-slate-900 px-3 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 md:hidden">Menu</button>
+        <a href="https://wa.me/2348101143167" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-600">WhatsApp</a>
+      </div>
+    </div>
+    <div id="mobileNav" class="hidden border-t border-slate-800 bg-slate-950/95 md:hidden">
+      <div class="container mx-auto flex flex-col gap-3 px-4 py-4 text-white">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#healthcheck" class="nav-link">IT Health Check</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-28">
+    <section id="home" class="cyber-grid bg-slate-950 text-white pb-20 pt-28">
+      <div class="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <p class="mb-4 text-sm uppercase tracking-[0.35em] text-emerald-300">Ethical IT, CCTV & cybersecurity support</p>
+          <h1 class="max-w-4xl text-3xl font-bold leading-tight sm:text-5xl">Secure, reliable technology operations for hotels, schools and growing businesses.</h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-slate-200 sm:text-lg">Currenlink System Limited helps organisations in Lagos protect guest data, reduce downtime, maintain surveillance systems and run networks with clear documentation, ethical practice and practical support.</p>
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a href="#healthcheck" class="inline-flex justify-center rounded-full bg-emerald-500 px-8 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-400">Book Security Health Check</a>
+            <a href="https://wa.me/2348101143167?text=Hello,%20I%20want%20to%20inquire%20about%20your%20IT%20and%20cybersecurity%20services" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center rounded-full border border-white/40 bg-white/10 px-8 py-3 text-sm font-semibold text-white transition hover:bg-white/20">Chat on WhatsApp</a>
+          </div>
+          <div class="mt-10 grid gap-4 text-sm text-slate-300 sm:grid-cols-3">
+            <div class="border-l border-emerald-400 pl-4"><strong class="block text-lg text-white">Prevent</strong> Misconfiguration, data loss and outages</div>
+            <div class="border-l border-emerald-400 pl-4"><strong class="block text-lg text-white">Protect</strong> CCTV, Wi-Fi, endpoints and users</div>
+            <div class="border-l border-emerald-400 pl-4"><strong class="block text-lg text-white">Respond</strong> With calm, documented action</div>
+          </div>
+        </div>
+        <div class="glass-panel rounded-xl p-6">
+          <div class="mb-6 flex items-center justify-between border-b border-slate-700 pb-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.25em] text-emerald-300">Operations Snapshot</p>
+              <h2 class="mt-2 text-xl font-semibold">Security readiness dashboard</h2>
+            </div>
+            <i data-lucide="shield-check" class="h-9 w-9 text-emerald-300"></i>
+          </div>
+          <div class="space-y-4">
+            <div class="rounded-lg bg-slate-900/80 p-4">
+              <div class="mb-2 flex items-center justify-between text-sm"><span>Network hygiene</span><span class="text-emerald-300">Monitored</span></div>
+              <div class="h-2 rounded-full bg-slate-800"><div class="h-2 w-[88%] rounded-full bg-emerald-400"></div></div>
+            </div>
+            <div class="rounded-lg bg-slate-900/80 p-4">
+              <div class="mb-2 flex items-center justify-between text-sm"><span>CCTV retention</span><span class="text-amber-300">Review due</span></div>
+              <div class="h-2 rounded-full bg-slate-800"><div class="h-2 w-[64%] rounded-full bg-amber-300"></div></div>
+            </div>
+            <div class="rounded-lg bg-slate-900/80 p-4">
+              <div class="mb-2 flex items-center justify-between text-sm"><span>Backup assurance</span><span class="text-sky-300">Validated</span></div>
+              <div class="h-2 rounded-full bg-slate-800"><div class="h-2 w-[76%] rounded-full bg-sky-300"></div></div>
+            </div>
+          </div>
+          <div class="mt-6 grid grid-cols-2 gap-3 text-sm">
+            <div class="rounded-lg border border-slate-700 p-4"><span class="block text-slate-400">Method</span><strong>Ethical review</strong></div>
+            <div class="rounded-lg border border-slate-700 p-4"><span class="block text-slate-400">Output</span><strong>Action report</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-200 bg-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <p class="mx-auto max-w-3xl text-lg leading-8 text-slate-600">Led by <strong>Fatukasi Kayode Victor</strong>, an experienced IT Manager and postgraduate researcher with hands-on expertise in hotel systems, ethical cybersecurity, network support, CCTV maintenance and staff training.</p>
+        <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="check-circle"></i></div>
+            <p class="font-semibold">Hospitality IT Operations</p>
+          </div>
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="camera"></i></div>
+            <p class="font-semibold">CCTV Assurance</p>
+          </div>
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="shield-check"></i></div>
+            <p class="font-semibold">Network Security</p>
+          </div>
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="bar-chart"></i></div>
+            <p class="font-semibold">Data Reporting</p>
+          </div>
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="users"></i></div>
+            <p class="font-semibold">Cyber Awareness</p>
+          </div>
+          <div class="service-card bg-slate-50 px-5 py-6 text-slate-700">
+            <div class="mb-3 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-500 text-white shadow-sm"><i data-lucide="headphones"></i></div>
+            <p class="font-semibold">Remote Assistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">Services built for resilience</p>
+          <h2 class="mt-3 text-3xl font-bold text-slate-900">IT services that protect revenue, reputation and data</h2>
+          <p class="mt-4 text-slate-600">From front desk software to CCTV storage and Wi-Fi reliability, we help teams operate with fewer surprises and better security habits.</p>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="monitor"></i></div>
+            <h3 class="text-xl font-semibold mb-3">IT Support & Maintenance</h3>
+            <p class="text-slate-600">Workstation setup, troubleshooting, endpoint hygiene, backup routines and user support that keeps daily operations moving.</p>
+          </div>
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="camera"></i></div>
+            <h3 class="text-xl font-semibold mb-3">CCTV Installation & Assurance</h3>
+            <p class="text-slate-600">Camera placement, NVR/DVR setup, retention checks, remote viewing support and fault diagnosis for dependable surveillance.</p>
+          </div>
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="wifi"></i></div>
+            <h3 class="text-xl font-semibold mb-3">Network & Wi-Fi Support</h3>
+            <p class="text-slate-600">Router configuration, LAN troubleshooting, Wi-Fi coverage improvement and internet stability reviews for guest and staff networks.</p>
+          </div>
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="shield-check"></i></div>
+            <h3 class="text-xl font-semibold mb-3">Ethical Cybersecurity Review</h3>
+            <p class="text-slate-600">Permission-based security checks, password policy review, phishing awareness and practical recommendations to reduce exposure.</p>
+          </div>
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="hotel"></i></div>
+            <h3 class="text-xl font-semibold mb-3">Hotel Software Support</h3>
+            <p class="text-slate-600">Support for front desk systems, POS, back-office workflows and reporting issues that affect guest service and accountability.</p>
+          </div>
+          <div class="service-card p-8">
+            <div class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-100 text-slate-900"><i data-lucide="bar-chart"></i></div>
+            <h3 class="text-xl font-semibold mb-3">Data Analysis & Training</h3>
+            <p class="text-slate-600">Excel, Python and dashboard training that helps students and staff turn business records into clearer decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="healthcheck" class="bg-slate-100 py-20 text-slate-900">
+      <div class="container mx-auto px-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-8 shadow-xl md:grid md:grid-cols-[1fr_0.9fr] md:gap-12 lg:p-10">
+          <div>
+            <p class="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">Flag issues before they become incidents</p>
+            <h2 class="text-3xl font-bold mb-6 text-slate-900">Hotel IT & Security Health Check</h2>
+            <p class="text-slate-600 mb-8">A structured, permission-based inspection for hotels and guest houses that identifies hidden weaknesses in infrastructure, access control, surveillance, backups and staff security habits.</p>
+            <ul class="space-y-3 text-slate-700">
+              <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500"></i> Wi-Fi coverage, router hygiene and LAN segmentation review</li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500"></i> CCTV/NVR inspection, camera visibility and storage retention check</li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500"></i> Front desk, POS and back-office access control review</li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500"></i> Backup, antivirus, patching and endpoint risk validation</li>
+              <li class="flex items-center gap-3"><i data-lucide="check" class="text-emerald-500"></i> Executive-ready report with risk rating and action priorities</li>
+            </ul>
+            <a href="https://wa.me/2348101143167?text=I%20want%20to%20book%20a%20Hotel%20IT%20and%20Security%20Health%20Check" class="mt-8 inline-flex rounded-full bg-emerald-600 px-8 py-3 font-semibold text-white transition hover:bg-emerald-500">Book a Health Check</a>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <div class="rounded-xl bg-slate-950 p-6 text-white">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.25em] text-emerald-300">Deliverables</p>
+                  <h3 class="mt-2 text-xl font-semibold">What management receives</h3>
+                </div>
+                <i data-lucide="clipboard-check" class="text-emerald-300"></i>
+              </div>
+              <div class="mt-6 space-y-4 text-sm text-slate-300">
+                <div class="rounded-lg border border-slate-800 p-4"><strong class="block text-white">Risk register</strong> Clear list of issues ranked by impact and urgency.</div>
+                <div class="rounded-lg border border-slate-800 p-4"><strong class="block text-white">Remediation roadmap</strong> Practical fixes grouped into immediate, short-term and planned actions.</div>
+                <div class="rounded-lg border border-slate-800 p-4"><strong class="block text-white">Executive summary</strong> Non-technical language for owners, managers and finance teams.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="container mx-auto grid gap-12 px-4 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">Cyber ethics</p>
+          <h2 class="mt-3 text-3xl font-bold text-slate-900">Security work with consent, confidentiality and accountability</h2>
+          <p class="mt-6 leading-8 text-slate-600">Currenlink approaches cybersecurity as a professional trust service. Every review is scoped, authorised and documented, with practical guidance that protects people, systems and business reputation.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="service-card p-6">
+            <i data-lucide="file-check-2" class="mb-4 text-emerald-600"></i>
+            <h3 class="font-semibold text-slate-900">Authorised scope</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">We agree what will be checked before work begins and avoid disruptive or unauthorised activity.</p>
+          </div>
+          <div class="service-card p-6">
+            <i data-lucide="lock-keyhole" class="mb-4 text-emerald-600"></i>
+            <h3 class="font-semibold text-slate-900">Confidential handling</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Sensitive findings, passwords, business data and camera information are treated with strict discretion.</p>
+          </div>
+          <div class="service-card p-6">
+            <i data-lucide="list-checks" class="mb-4 text-emerald-600"></i>
+            <h3 class="font-semibold text-slate-900">Actionable reporting</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Reports focus on what matters: risk, likely impact, recommended fix and priority level.</p>
+          </div>
+          <div class="service-card p-6">
+            <i data-lucide="users-round" class="mb-4 text-emerald-600"></i>
+            <h3 class="font-semibold text-slate-900">People-first training</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Staff are guided without blame, helping teams build safer habits around email, passwords and devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-slate-900">Support Packages</h2>
+          <p class="mt-4 text-slate-600">Flexible support options for businesses that need reliable systems, clear response times and better security discipline.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="service-card bg-slate-50 p-8">
+            <h3 class="text-xl font-semibold mb-2">Basic Support</h3>
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500 mb-6">Small Businesses</p>
+            <ul class="space-y-3 text-slate-600 mb-8">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Remote support</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Basic troubleshooting</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Monthly system check</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> WhatsApp/phone support</li>
+            </ul>
+            <a href="https://wa.me/2348101143167?text=Inquiry:%20Basic%20Support%20Package" class="inline-flex w-full justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Choose Basic</a>
+          </div>
+          <div class="relative rounded-xl border-2 border-slate-900 bg-white p-8 shadow-xl">
+            <span class="absolute -top-4 left-1/2 inline-flex -translate-x-1/2 rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white">Popular</span>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">Standard Support</h3>
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500 mb-6">Hotels & Offices</p>
+            <ul class="space-y-3 text-slate-700 mb-8">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Everything in Basic</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> One scheduled physical visit monthly</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> CCTV and network health check</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Backup and security review</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Staff guidance</li>
+            </ul>
+            <a href="https://wa.me/2348101143167?text=Inquiry:%20Standard%20Support%20Package" class="inline-flex w-full justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Choose Standard</a>
+          </div>
+          <div class="service-card bg-slate-50 p-8">
+            <h3 class="text-xl font-semibold mb-2">Premium Support</h3>
+            <p class="text-sm uppercase tracking-[0.24em] text-slate-500 mb-6">Enterprise</p>
+            <ul class="space-y-3 text-slate-600 mb-8">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Everything in Standard</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Priority support</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Multiple on-site visits</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Cybersecurity awareness training</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Vendor coordination</li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 shrink-0 text-emerald-500"></i> Incident response support</li>
+            </ul>
+            <a href="https://wa.me/2348101143167?text=Inquiry:%20Premium%20Support%20Package" class="inline-flex w-full justify-center rounded-full border border-slate-900 bg-transparent px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">Choose Premium</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-100">
+      <div class="container mx-auto px-4 grid gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900 mb-6">About Currenlink System Limited</h2>
+          <p class="text-slate-600 leading-relaxed mb-6">Currenlink System Limited is an IT and digital security support company focused on helping hotels, schools, offices and small businesses run secure, reliable and accountable technology operations.</p>
+          <p class="text-slate-600 leading-relaxed">The company is led by <strong>Fatukasi Kayode Victor</strong>, an experienced IT Manager with professional exposure to hotel IT systems, network administration, CCTV operations and data analysis. His background in Mathematics, Cybersecurity and postgraduate research strengthens our structured, evidence-led approach to every engagement.</p>
+        </div>
+        <div class="rounded-xl bg-white p-8 shadow-sm border border-slate-200">
+          <h3 class="text-xl font-semibold text-slate-900 mb-4">Why Choose Us?</h3>
+          <ul class="space-y-3 text-slate-600">
+            <li class="flex gap-3"><i data-lucide="check-circle" class="h-5 w-5 shrink-0 text-emerald-500"></i> Practical hotel IT and front-office experience</li>
+            <li class="flex gap-3"><i data-lucide="check-circle" class="h-5 w-5 shrink-0 text-emerald-500"></i> Ethical, permission-based security practice</li>
+            <li class="flex gap-3"><i data-lucide="check-circle" class="h-5 w-5 shrink-0 text-emerald-500"></i> Structured diagnostics and clear documentation</li>
+            <li class="flex gap-3"><i data-lucide="check-circle" class="h-5 w-5 shrink-0 text-emerald-500"></i> Professional communication with management and staff</li>
+            <li class="flex gap-3"><i data-lucide="check-circle" class="h-5 w-5 shrink-0 text-emerald-500"></i> On-site and remote support across Lagos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-slate-900">Request Support or Book an Inspection</h2>
+        </div>
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <form action="mailto:info@currenlinksystem.com" method="post" enctype="text/plain" class="space-y-4">
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Name</label>
+                <input type="text" name="Name" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" required />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Business/Hotel Name</label>
+                <input type="text" name="Business" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+                <input type="tel" name="Phone" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" required />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Service Needed</label>
+                <select name="Service" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100">
+                  <option>IT Support</option>
+                  <option>CCTV Maintenance</option>
+                  <option>IT & Security Health Check</option>
+                  <option>Cybersecurity Awareness Training</option>
+                  <option>Network & Wi-Fi Support</option>
+                  <option>Hotel Software Support</option>
+                  <option>Data Training</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Message</label>
+                <textarea name="Message" rows="4" class="w-full rounded-2xl border border-slate-300 bg-white px-4 py-3 text-slate-700 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"></textarea>
+              </div>
+              <button type="submit" class="inline-flex w-full justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Send Request</button>
+            </form>
+          </div>
+          <div class="space-y-8">
+            <div class="rounded-xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+              <h3 class="text-xl font-semibold text-slate-900 mb-4">Contact Information</h3>
+              <div class="space-y-4 text-slate-700">
+                <a href="tel:+2348101143167" class="flex items-center gap-3 hover:text-slate-900 transition"><i data-lucide="phone" class="text-emerald-500"></i> 08101143167</a>
+                <a href="mailto:info@currenlinksystem.com" class="flex items-center gap-3 hover:text-slate-900 transition"><i data-lucide="mail" class="text-emerald-500"></i> info@currenlinksystem.com</a>
+                <div class="flex items-start gap-3 text-slate-700"><i data-lucide="map-pin" class="mt-1 text-emerald-500"></i><span>Lagos, Nigeria<br><small class="text-slate-500">Serving VI, Lekki, Ikoyi, Yaba, Surulere & more.</small></span></div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-emerald-100 bg-emerald-50 p-8 text-emerald-900 shadow-sm">
+              <p class="font-semibold">Fastest response via WhatsApp</p>
+              <a href="https://wa.me/2348101143167" class="mt-3 inline-block text-base font-semibold text-emerald-900">Click to start a chat &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-300 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <span class="text-xl font-semibold text-white">CURRENLINK</span>
+          <p class="mt-4 text-sm text-slate-400 italic">Reliable IT support and cybersecurity solutions for the hospitality and education sectors in Lagos.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Our Services</h3>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="#services" class="hover:text-white">IT Support</a></li>
+            <li><a href="#services" class="hover:text-white">CCTV Installation</a></li>
+            <li><a href="#healthcheck" class="hover:text-white">Security Health Check</a></li>
+            <li><a href="#services" class="hover:text-white">Staff Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white mb-4">Connect</h3>
+          <div class="space-y-3 text-sm text-slate-400">
+            <a href="https://wa.me/2348101143167" class="block hover:text-white">WhatsApp</a>
+            <a href="mailto:info@currenlinksystem.com" class="block hover:text-white">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-800 pt-8 text-center text-xs text-slate-500">&copy; <span id="year"></span> Currenlink System Limited. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const mobileNav = document.getElementById('mobileNav');
+    document.getElementById('navToggle').addEventListener('click', function() {
+      mobileNav.classList.toggle('hidden');
+    });
+    mobileNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileNav.classList.add('hidden'));
+    });
+  </script>
+</body>
+</html>
