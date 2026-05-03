@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Currenlink System Limited | IT, Security Systems & Network Solutions</title>
+  <link rel="icon" type="image/png" href="currenlink_logo.png" />
   <meta
     name="description"
     content="Currenlink System Limited helps businesses in Nigeria stay secure, connected, and productive with IT support, security systems, and network solutions."
@@ -100,11 +101,8 @@
     }
 
     .brand-logo {
-      width: 168px;
-      padding: 8px 10px;
-      background: rgba(255, 255, 255, 0.96);
-      border-radius: 8px;
-      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+      width: 180px;
+      height: auto;
     }
 
     .availability {
@@ -213,14 +211,6 @@
       backdrop-filter: blur(18px);
     }
 
-    .device-logo {
-      width: 178px;
-      padding: 9px 10px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.96);
-    }
-
     .status-panel {
       display: grid;
       gap: 12px;
@@ -246,6 +236,11 @@
       color: var(--navy-deep);
       background: #ffffff;
       font-weight: 900;
+    }
+
+    .icon-box svg {
+      width: 22px;
+      height: 22px;
     }
 
     .status-title {
@@ -564,7 +559,7 @@
       <div class="hero-inner">
         <div>
           <div class="brand-bar">
-            <img class="brand-logo" src="currenlink_logo_white_background.png" alt="Currenlink System Limited" />
+            <img class="brand-logo" src="currenlink_logo.png" alt="Currenlink System Limited" />
             <span class="availability">Available for consultations</span>
           </div>
 
@@ -587,11 +582,9 @@
 
         <div class="visual" aria-label="Currenlink service dashboard">
           <div class="device">
-            <img class="device-logo" src="currenlink_logo_white_background.png" alt="" />
-
             <div class="status-panel">
               <div class="status-row">
-                <div class="icon-box">IT</div>
+                <div class="icon-box"><i data-lucide="monitor"></i></div>
                 <div>
                   <p class="status-title">Managed IT Support</p>
                   <p class="status-note">Helpdesk, maintenance, troubleshooting, and system care.</p>
@@ -600,7 +593,7 @@
               </div>
 
               <div class="status-row">
-                <div class="icon-box">SS</div>
+                <div class="icon-box"><i data-lucide="shield-check"></i></div>
                 <div>
                   <p class="status-title">Security Systems</p>
                   <p class="status-note">CCTV, smart locks, intercoms, solar support, access control, and maintenance.</p>
@@ -609,7 +602,7 @@
               </div>
 
               <div class="status-row">
-                <div class="icon-box">NW</div>
+                <div class="icon-box"><i data-lucide="network"></i></div>
                 <div>
                   <p class="status-title">Network Solutions</p>
                   <p class="status-note">Wi-Fi, LAN, routers, cabling, and stable business connectivity.</p>
@@ -618,7 +611,7 @@
               </div>
 
               <div class="status-row">
-                <div class="icon-box">WS</div>
+                <div class="icon-box"><i data-lucide="code-2"></i></div>
                 <div>
                   <p class="status-title">Web & Software</p>
                   <p class="status-note">Business websites, custom software, and data automation tools.</p>
@@ -747,5 +740,8 @@
       </div>
     </footer>
   </div>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
